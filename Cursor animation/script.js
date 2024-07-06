@@ -1,5 +1,5 @@
 const cursor = document.querySelector(".cursor");
-
+let timeout;
 
 // follow cursor on mousemove
 document.addEventListener("mousemove", (e) => {
@@ -9,6 +9,13 @@ document.addEventListener("mousemove", (e) => {
     cursor.style.top = y + "px";
     cursor.style.left = x + "px";
     cursor.style.display = "block";
+
+    // cursor effect when mouse stopped
+    mouseStopped = () => {
+        cursor.style.display = "none";
+    }
+    clearTimeout(timeout);
+    timeout = setTimeout(mouseStopped, 1000);
 });
 
 // cursor effect on mouse out
