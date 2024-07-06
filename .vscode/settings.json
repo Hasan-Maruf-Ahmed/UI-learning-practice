@@ -1,0 +1,6 @@
+{
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.defaultColorDecorators": true,
+  "editor.experimentalInlineEdit.backgroundColoring": true,
+  "editor.colorDecoratorsActivatedOn": "clickAndHover"
+}
