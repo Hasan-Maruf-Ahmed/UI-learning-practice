@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -18,10 +19,32 @@ body {
 
 .cursor {
   z-index: 1000;
-  background: #088395;
+  background: #2696e8;
   height: 16px;
   width: 16px;
   border-radius: 50%;
   pointer-events: none;
-  box-shadow: 0 0 20px #088395, 0 0 60px #088395, 0 0 100px #088395;
+  box-shadow: 0 0 20px #2696e8, 0 0 60px #2696e8, 0 0 100px #2696e8;
+  animation: colors 8s infinite;
+}
+
+@keyframes colors {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.cursor::before{
+  content:"";
+  position:absolute;
+  background: #2696e8;
+  height: 40px;
+  width: 40px;
+  opacity: 0.15;
+  transform: translate(-30%, -30%);
+  border-radius: 50%;
+  filter: blur(3px);
 }
