@@ -20,12 +20,14 @@ body {
 .cursor {
   z-index: 1000;
   background: #2696e8;
+  position: fixed;
   height: 16px;
   width: 16px;
   border-radius: 50%;
   pointer-events: none;
   box-shadow: 0 0 20px #2696e8, 0 0 60px #2696e8, 0 0 100px #2696e8;
   animation: colors 8s infinite;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes colors {
