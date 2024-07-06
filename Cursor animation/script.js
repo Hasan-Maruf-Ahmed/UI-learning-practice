@@ -8,4 +8,10 @@ document.addEventListener("mousemove", (e) => {
 
     cursor.style.top = y + "px";
     cursor.style.left = x + "px";
+    cursor.style.display = "block";
+});
+
+// cursor effect on mouse out
+document.addEventListener("mouseout", () => {
+    cursor.style.display = "none";
 });

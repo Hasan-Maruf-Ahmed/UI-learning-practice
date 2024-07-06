@@ -28,6 +28,7 @@ body {
   box-shadow: 0 0 20px #2696e8, 0 0 60px #2696e8, 0 0 100px #2696e8;
   animation: colors 8s infinite;
   transform: translate(-50%, -50%);
+  display: none;
 }
 
 @keyframes colors {
